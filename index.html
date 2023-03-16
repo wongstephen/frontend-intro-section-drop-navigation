@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="top-bar">
+        <h1>snap</h1>
+        <nav>
+          <button aria-label="open menu" class="menu-icon">
+            <img src="images/icon-menu.svg" alt="menu icon" />
+          </button>
+          <div class="mobile-nav-container opacity0">
+            <div class="mobile-nav-link-container">
+              <button class="close-menu-icon">
+                <img src="/images/icon-close-menu.svg" />
+              </button>
+              <ul class="spacing links">
+                <li>
+                  <button
+                    class="nav-link-button"
+                    name="feature"
+                    aria-label="expand feature menu"
+                  >
+                    Features
+                    <img
+                      src="images/icon-arrow-up.svg"
+                      class="features-arrow arrow"
+                      alt="expand features"
+                    />
+                  </button>
+                  <ul class="spacing sub-list hide-sub-list">
+                    <li>
+                      <img
+                        src="/images/icon-todo.svg"
+                        alt="todo icon"
+                        class="feature-ico"
+                      /><a href="" class="nav-link">Todo List</a>
+                    </li>
+                    <li>
+                      <img
+                        src="/images/icon-calendar.svg"
+                        alt="feature icon"
+                        class="feature-ico"
+                      /><a href="" class="nav-link">Calendar</a>
+                    </li>
+                    <li>
+                      <img
+                        src="/images/icon-reminders.svg"
+                        alt="reminder icon"
+                        class="feature-ico"
+                      /><a href="" class="nav-link">Reminders</a>
+                    </li>
+                    <li>
+                      <img
+                        src="/images/icon-planning.svg"
+                        alt="planning icon"
+                        class="feature-ico"
+                      /><a href="" class="nav-link">Planning</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <button
+                    class="nav-link-button"
+                    name="company"
+                    aria-label="expand company menu"
+                  >
+                    Company
+                    <img
+                      src="images/icon-arrow-up.svg"
+                      class="company-arrow arrow"
+                      alt="expand features"
+                    />
+                  </button>
+                  <ul class="spacing sub-list hide-sub-list">
+                    <li><a href="" class="nav-link">History</a></li>
+                    <li><a href="" class="nav-link">Our Team</a></li>
+                    <li><a href="" class="nav-link">Blog</a></li>
+                  </ul>
+                </li>
+                <li><a href="" class="nav-link">Careers</a></li>
+                <li><a href="" class="nav-link">About</a></li>
+              </ul>
+              <div class="btn-container">
+                <button class="btn-login nav-link" aria-label="Login">
+                  Login
+                </button>
+                <button class="btn-register nav-link" aria-label="Register">
+                  Register
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <div class="hero-img-container">
+          <picture
+            ><source
+              srcset="/images/image-hero-desktop.png"
+              media="(min-width:900px)"
+            />
+            <img src="images/image-hero-mobile.png" class="hero-img" />
+          </picture>
+        </div>
+        <div class="hero-content">
+          <h2 class="hero-title">Make remote work</h2>
+          <p class="hero-cta">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button aria-text="Learn more about remotwork" class="hero-btn">
+            Learn more
+          </button>
+          <div class="clients">
+            <img src="./images/client-databiz.svg" class="client databiz" />
+            <img
+              src="./images/client-audiophile.svg"
+              class="client audiophile"
+            />
+            <img src="./images/client-meet.svg" class="client meet" />
+            <img src="./images/client-maker.svg" class="client maker" />
+          </div>
+        </div>
+      </main>
+      <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    </div>
+  </body>
+</html>
