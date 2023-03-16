@@ -41,4 +41,5 @@ links.forEach((link) => {
 
 document.querySelector("main").addEventListener("click", () => {
   featuresSubMenu.forEach((feature) => feature.classList.add("hide-sub-list"));
+  arrows.forEach((arrow) => arrow.classList.remove("flipped-arrow"));
 });
