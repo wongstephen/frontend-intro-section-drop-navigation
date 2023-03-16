@@ -19,6 +19,7 @@ function handleExpandNav(expandLink) {
   if (expandLink.name === "feature") {
     featuresSubMenu[0].classList.toggle("hide-sub-list");
     featuresSubMenu[1].classList.add("hide-sub-list");
+    document.addEventListener("click", (e) => {});
   }
   if (expandLink.name === "company") {
     featuresSubMenu[1].classList.toggle("hide-sub-list");
