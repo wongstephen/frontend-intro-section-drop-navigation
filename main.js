@@ -38,3 +38,7 @@ links.forEach((link) => {
     toggleNav();
   });
 });
+
+document.querySelector("main").addEventListener("click", () => {
+  featuresSubMenu.forEach((feature) => feature.classList.add("hide-sub-list"));
+});
