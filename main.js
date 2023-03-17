@@ -43,3 +43,19 @@ document.querySelector("main").addEventListener("click", () => {
   featuresSubMenu.forEach((feature) => feature.classList.add("hide-sub-list"));
   arrows.forEach((arrow) => arrow.classList.remove("flipped-arrow"));
 });
+
+document
+  .querySelector(".mobile-nav-container")
+  .addEventListener("click", (el) => {
+    if (
+      el.target.classList.contains("mobile-nav-link-container") ||
+      el.target.classList.contains("mobile-nav-container")
+    ) {
+      toggleNav();
+      arrows.forEach((arrow) => arrow.classList.remove("flipped-arrow"));
+
+      featuresSubMenu.forEach((feature) =>
+        feature.classList.add("hide-sub-list")
+      );
+    }
+  });
